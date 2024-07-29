@@ -1,1 +1,1 @@
-Scripts for optimizing general workplace 
+Scripts for optimizing and increasing workplace productivity
