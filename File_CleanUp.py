@@ -11,7 +11,8 @@ file_types = {
     'documents': ['.pdf', '.csv', '.docx', '.json', '.txt', '.xlsx', '.xlsm'],
     'videos': ['.mp4', '.mkv', '.avi'],
     'audio': ['.mp3', '.wav'],
-    'scripts': ['.py', '.js', '.html', '.sh']
+    'scripts': ['.py', '.js', '.html', '.sh'],
+    'decks': ['pptx']
 }
 
 for folder in file_types.keys():
@@ -27,7 +28,8 @@ for filename in os.listdir(downloads_folder):
         moved = False
         for folder, extensions in file_types.items():
             if file_extension in extensions:
-                destination_path = os.path.join(destination_folder, folder, filename)
+                destination_path = os.path.join(
+                    destination_folder, folder, filename)
                 shutil.move(file_path, destination_path)
                 print(f'Moved {filename} to {destination_path}')
                 moved = True
