@@ -12,7 +12,7 @@ file_types = {
     'videos': ['.mp4', '.mkv', '.avi'],
     'audio': ['.mp3', '.wav'],
     'scripts': ['.py', '.js', '.html', '.sh'],
-    'decks': ['pptx']
+    'decks': ['.pptx']
 }
 
 for folder in file_types.keys():
